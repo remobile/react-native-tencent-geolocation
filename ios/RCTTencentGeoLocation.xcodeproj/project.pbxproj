@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DF34363C1FDF8A8500141580 /* TencentGeoLocationModule.m in Sources */ = {isa = PBXBuildFile; fileRef = DF34363B1FDF8A8500141580 /* TencentGeoLocationModule.m */; };
-		DF96BEC3221D43C300E5DD47 /* AMapLocationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF96BEC1221D43C200E5DD47 /* AMapLocationKit.framework */; };
-		DF96BEC4221D43C300E5DD47 /* AMapFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF96BEC2221D43C300E5DD47 /* AMapFoundationKit.framework */; };
+		DF96BEDA221FF71000E5DD47 /* TencentLBS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF96BED9221FF71000E5DD47 /* TencentLBS.framework */; };
+		DF96BEE1221FF79C00E5DD47 /* TencentGeoLocationModule.m in Sources */ = {isa = PBXBuildFile; fileRef = DF96BEE0221FF79C00E5DD47 /* TencentGeoLocationModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +24,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DF34363A1FDF8A8500141580 /* TencentGeoLocationModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TencentGeoLocationModule.h; sourceTree = "<group>"; };
-		DF34363B1FDF8A8500141580 /* TencentGeoLocationModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TencentGeoLocationModule.m; sourceTree = "<group>"; };
-		DF96BEC1221D43C200E5DD47 /* AMapLocationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMapLocationKit.framework; path = libs/AMapLocationKit.framework; sourceTree = "<group>"; };
-		DF96BEC2221D43C300E5DD47 /* AMapFoundationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMapFoundationKit.framework; path = libs/AMapFoundationKit.framework; sourceTree = "<group>"; };
+		DF96BED9221FF71000E5DD47 /* TencentLBS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TencentLBS.framework; path = libs/TencentLBS.framework; sourceTree = "<group>"; };
+		DF96BEDF221FF79C00E5DD47 /* TencentGeoLocationModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TencentGeoLocationModule.h; sourceTree = "<group>"; };
+		DF96BEE0221FF79C00E5DD47 /* TencentGeoLocationModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TencentGeoLocationModule.m; sourceTree = "<group>"; };
+		DF96BEE22220DC3E00E5DD47 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 		EF3C22561CC2C30D0099E9B6 /* libRCTTencentGeoLocation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTTencentGeoLocation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -37,8 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF96BEC3221D43C300E5DD47 /* AMapLocationKit.framework in Frameworks */,
-				DF96BEC4221D43C300E5DD47 /* AMapFoundationKit.framework in Frameworks */,
+				DF96BEDA221FF71000E5DD47 /* TencentLBS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,8 +46,8 @@
 		DF96BEC0221D43C200E5DD47 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DF96BEC2221D43C300E5DD47 /* AMapFoundationKit.framework */,
-				DF96BEC1221D43C200E5DD47 /* AMapLocationKit.framework */,
+				DF96BEE22220DC3E00E5DD47 /* libz.1.2.5.tbd */,
+				DF96BED9221FF71000E5DD47 /* TencentLBS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -74,8 +72,8 @@
 		EF3C22581CC2C30D0099E9B6 /* RCTTencentGeoLocation */ = {
 			isa = PBXGroup;
 			children = (
-				DF34363A1FDF8A8500141580 /* TencentGeoLocationModule.h */,
-				DF34363B1FDF8A8500141580 /* TencentGeoLocationModule.m */,
+				DF96BEDF221FF79C00E5DD47 /* TencentGeoLocationModule.h */,
+				DF96BEE0221FF79C00E5DD47 /* TencentGeoLocationModule.m */,
 			);
 			path = RCTTencentGeoLocation;
 			sourceTree = "<group>";
@@ -136,7 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF34363C1FDF8A8500141580 /* TencentGeoLocationModule.m in Sources */,
+				DF96BEE1221FF79C00E5DD47 /* TencentGeoLocationModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
